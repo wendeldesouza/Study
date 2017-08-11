@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+	<title>Horários</title>
+	
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="bootstrap-social.css" rel="stylesheet">
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/func.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="exit">
+		<a  class="btn" href="login.html">
+			<span class="glyphicon glyphicon-off"></span>
+			Logout  
+		</a>
+	</div>
+	
+	<div id="mySidenav" class="sidenav">
+		<a href="menu.html" id="Home"><img class="iconLogo" src="img/logo.png"></a><br><br>
+		<a href="menualuno.html"><img class="iconMenu" src="img/aluno.png"> Alunos</a>
+		<a href="menuturma.html"><img class="iconMenu" src="img/turma.png"> Turmas</a>
+		<a href="menudisciplina.html"><img class="iconMenu" src="img/disc.png"> Disciplinas</a>
+		<a href="menuprofessor.html"><img class="iconMenu" src="img/prof.png"> Professores</a>
+	<!-- <a href="#"><img class="iconMenu" src="img/mensal.png"> Mensalidade</a>
+	<a href="#"><img class="iconMenu" src="img/notas.png"> Notas e Faltas</a> -->
+
+	<div class="footer">
+		<a id="githubIcon" target="_blank" href="https://github.com/jackson12pk" class="btn btn-social-icon btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-github']);"><span class="fa fa-github"></span></a>
+		<a id="linkedinIcon" target="_blank" href="https://www.linkedin.com/in/jjnpereira" class="btn btn-social-icon btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-linkedin']);"><span class="fa fa-linkedin"></span></a>
+		<a id="facebookIcon" target="_blank" class="btn btn-social-icon btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span class="fa fa-facebook"></span></a>
+	</div>
+</div>
+<div class="IconCrud">
+	<img class="" src="img/calendar.png">
+	<p>
+		Horários
+	</p>
+</div>
+<div class="Crud">
+	<form role="search" class="navbar-form">
+		<div class="form-group has-feedback">
+			<input type="text" class="form-control" placeholder="Pesquisa de Horários" id="Pesquisa" />
+			<span class="form-control-feedback glyphicon glyphicon-search"></span>
+		</div>
+	</form>
+	<table class="table table-striped table-responsive">
+		<th>Horários</th>
+		<th>Segunda-feira</th>
+		<th>Terça-feira</th>
+		<th>Quarta-feira</th>
+		<th>Quinta-feira</th>
+		<th>Sexta-feira</th>
+		<th colspan="2">
+			<a class="btn btn-success" href="#"><span class="glyphicon glyphicon-plus"></span> Novo</a>
+		</th>
+		<tr>
+			<td>07:00 as 07:50</td>
+			<td>Português</td>
+			<td>Química</td>
+			<td>Matemática</td>
+			<td>Geografia</td>
+			<td>Física</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+			<td><a id="Excluir" class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+		</tr>
+		<tr>
+			<td>07:50 as 08:40</td>
+			<td>Química</td>
+			<td>Matemática</td>
+			<td>Geografia</td>
+			<td>Física</td>
+			<td>Português</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+			<td><a id="Excluir" class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+		</tr>
+		<tr>
+			<td>08:40 as 09:30</td>
+			<td>Matemática</td>
+			<td>Geografia</td>
+			<td>Física</td>
+			<td>Português</td>
+			<td>Química</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+			<td><a id="Excluir" class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+		</tr>
+		<tr>
+			<td>09:30 as 10:20</td>
+			<td>Geografia</td>
+			<td>Física</td>
+			<td>Português</td>
+			<td>Química</td>
+			<td>Matemática</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+			<td><a id="Excluir" class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+		</tr>
+		<tr>
+			<td>10:20 as 11:20</td>
+			<td>Física</td>
+			<td>Português</td>
+			<td>Química</td>
+			<td>Matemática</td>
+			<td>Geografia</td>
+			<td><a id="Editar" class="btn btn-warning" href="#"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+			<td><a id="Excluir" class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash"></span> Excluir</a></td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>
